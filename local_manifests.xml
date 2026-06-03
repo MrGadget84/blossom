@@ -2,10 +2,10 @@
 <manifest>
   
   <!-- Remotes -->
-  <remote name="HaiKito" fetch="https://github.com/HaiKito18" />
+  <remote name="MrGadget84" fetch="https://github.com/MrGadget84" />
   
   <!-- Device Trees -->
-  <project path="device/xiaomi/blossom" name="device_xiaomi_blossom" remote="HaiKito" revision="A16" />
+  <project path="device/xiaomi/blossom" name="device_xiaomi_blossom" remote="MrGadget84" revision="A16" />
 
   <!-- SELinux policies -->
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr_lineage23" remote="HaiKito" revision="lineage-23" />
@@ -14,7 +14,7 @@
   <project path="hardware/mediatek" name="hardware_mediatek" remote="HaiKito" revision="main" />
 
   <!-- kernel tree -->
-  <project path="device/xiaomi/blossom-kernel" name="device_xiaomi_blossom-kernel_a16" remote="HaiKito" revision="sixteen">
+  <project path="device/xiaomi/blossom-kernel" name="white_kernel_xiaomi_blossom" remote="MrGadget84" revision="infninity">
     <linkfile src="headers" dest="kernel/xiaomi/blossom" />
   </project>
 
