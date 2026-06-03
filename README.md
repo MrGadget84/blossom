@@ -2,6 +2,6 @@
 <p align="center" id="description">Local_Manifests for LineageOS-23 </p>
 
 ```
-git clone https://github.com/HaiKito18/Blossom_local_mainfest.git -b A16 .repo/local_manifests
+git clone https://github.com/MrGadget84/Blossom_local_mainfest.git -b A16 .repo/local_manifests
 ```
 
