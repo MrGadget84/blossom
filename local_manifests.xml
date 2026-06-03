@@ -3,6 +3,7 @@
   
   <!-- Remotes -->
   <remote name="MrGadget84" fetch="https://github.com/MrGadget84" />
+  <remote name="HaiKito" fetch="https://github.com/HaiKito18" />
   
   <!-- Device Trees -->
   <project path="device/xiaomi/blossom" name="device_xiaomi_blossom" remote="MrGadget84" revision="A16" />
