@@ -15,7 +15,7 @@
   <project path="hardware/mediatek" name="hardware_mediatek" remote="HaiKito" revision="main" />
 
   <!-- kernel tree -->
-  <project path="device/xiaomi/blossom-kernel" name="white_kernel_xiaomi_blossom" remote="MrGadget84" revision="infninity">
+  <project path="device/xiaomi/blossom-kernel" name="white_kernel_xiaomi_blossom" remote="MrGadget84" revision="infinity">
     <linkfile src="headers" dest="kernel/xiaomi/blossom" />
   </project>
 
