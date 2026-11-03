@@ -126,12 +126,3 @@ if [[ "$UPLOAD_GOTOFILE" == "1" ]]; then
     SERVER="$(curl -fsS https://api.gofile.io/servers | jq -r '.data.servers[0].name')"
     [[ -n "$SERVER" && "$SERVER" != "null" ]] || { echo "Could not get GoFile server."; exit 4; }
     RESPONSE="$(curl -fsS -F "file=@${ZIP_FILE}" "https://${SERVER}.gofile.io/uploadFile")"
-    LINK="$(jq -r '.data.downloadPage // empty' <<<"$RESPONSE")"
-    [[ -n "$LINK" ]] || { echo "GoFile upload failed: $RESPONSE"; exit 4; }
-    echo "Download: $LINK"
-    telegram_edit "$TELEGRAM_CHAT_ID" "$BUILD_MESSAGE_ID" \
-        "Halcyon build succeeded for ${DEVICE}. Size: ${SIZE}. MD5: ${MD5}. Download: ${LINK}"
-else
-    telegram_edit "$TELEGRAM_CHAT_ID" "$BUILD_MESSAGE_ID" \
-        "Halcyon build succeeded for ${DEVICE}. ZIP: $(basename "$ZIP_FILE"). Size: ${SIZE}. MD5: ${MD5}"
-fi
